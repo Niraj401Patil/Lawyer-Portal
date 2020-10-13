@@ -1,0 +1,69 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <link href="~/Styles/lawonclick.css" runat="server" rel="Stylesheet" type="text/css" />
+     <link id="Link1" href="~/Styles/Login.css" runat="server" rel="Stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="divHeaderTop">
+            <div class="divMiddle">            
+                <div class="Table">
+                    <div class="Td" style="width:24px">
+                        <img src="Images/Phone.png" alt="Call" style="border:2px solid #69bc45; padding:2px; border-radius:50%" /><div class="Td">
+                        <span style="font-size:18px; color:#ebffe3; vertical-align:middle; margin-left:5px;">
+                        9922341179/9890865253 </span>
+                    </div>
+                    &nbsp;</div>
+                    <div class="Td">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="divHeaderMiddle" style="border-bottom:1px solid silver">
+            <div class="divMiddle">
+                <table border="0" cellpadding="0" cellspacing="0" style="width:100%">
+                    <tr>
+                        <td style="width:100px"></td>
+                        <td>
+                            <div  style="font-family: 'berlin Sans FB'; font-size: 36px; color: #333333; text-align: center; margin-top:7px">
+                                LawyerOnCLick</div>
+                            <div  style="font-family: 'Calibri'; font-size: 14px; color: #666666; text-align: center; margin-bottom:5px; font-weight: bold;">Find Best Lawyer For You In Your Location</div>
+                        </td>
+                        <td style="width:150px" align="right">
+                            <img src="Images/User.png" alt="" />
+                            <asp:LinkButton ID="LinkButton1" style="text-decoration:none; color:#212121" 
+                                Text="Login/Register" runat="server" onclick="LinkButton1_Click"></asp:LinkButton>
+                        </td>
+                    </tr>
+                </table>
+             </div>
+        </div>
+        <div id="divHeaderBottom"  style="border-bottom:1px solid silver">
+            <div class="divMiddle" style="background-color: #91C8Ff">
+                <ul id="ulMenuMain">
+                    <li><a href="HOME.aspx" style="padding-left:0; font-weight: bold;">Home</a></li>
+                    <li><a href="HowItWorks.aspx" style="font-weight: bold">How It Works</a></li>
+                    <li><a href="contactus.aspx" style="font-weight: bold">Contact</a></li>
+                    <li><a href="About.aspx" style="font-weight: bold">About Us</a></li>
+                    <li><a href="frmfeeback.aspx" style="font-weight: bold">Feedback</a></li>
+            </div>
+        </div>
+
+        <div style="min-height:500px;">
+            <div class="divMiddle">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+
+    </form>
+</body>
+</html>
